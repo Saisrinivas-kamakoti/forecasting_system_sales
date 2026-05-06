@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+artifacts/models/
+artifacts/metrics.csv
+artifacts/forecast_8_weeks.csv
+artifacts/training_summary.json
+.pytest_cache/
