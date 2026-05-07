@@ -1,6 +1,7 @@
 import argparse
 import json
 from datetime import datetime, timezone
+from pathlib import Path
 
 import pandas as pd
 import joblib
@@ -38,10 +39,21 @@ def evaluate_model(model, train_df: pd.DataFrame, validation_df: pd.DataFrame) -
     }
 
 
+def _resolve_data_path(data_path) -> Path:
+    path = Path(data_path)
+    if path.is_dir():
+        matches = sorted(path.glob("*.xlsx"))
+        if not matches:
+            raise FileNotFoundError(f"No .xlsx file found in data directory: {path}")
+        return matches[0]
+    return path
+
+
 def train_all(data_path=DATA_PATH):
     ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
     MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
+    data_path = _resolve_data_path(data_path)
     raw = load_raw_data(data_path)
     weekly = prepare_weekly_state_sales(raw)
     metrics_rows = []

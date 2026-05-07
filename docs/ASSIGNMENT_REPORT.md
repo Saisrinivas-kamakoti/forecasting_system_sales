@@ -82,12 +82,13 @@ This allows different states to use different best-performing algorithms.
 
 ## API Design
 
-The API is built with FastAPI and serves saved forecast artifacts.
+The API is built with FastAPI and serves saved forecast outputs.
 
 | Endpoint | Purpose |
 | --- | --- |
-| `GET /health` | Confirms artifact availability |
+| `GET /health` | Confirms output availability |
 | `GET /states` | Lists all forecastable states |
+| `GET /predict?state=Alabama&weeks=8` | Assignment-style forecast endpoint |
 | `GET /forecast/{state}` | Returns the next 8 weeks for one state |
 | `GET /forecast` | Returns forecasts for all states |
 
@@ -102,4 +103,3 @@ Training and serving are separated so API requests remain fast and stable.
 - README
 - Architecture document
 - Video walkthrough script
-

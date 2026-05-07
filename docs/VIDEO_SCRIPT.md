@@ -20,7 +20,7 @@ The pipeline trains and compares four models: SARIMA, Facebook Prophet, XGBoost 
 
 ## 5. Model Selection
 
-For every state, the model with the lowest validation RMSE is selected automatically. The best model is retrained on the full historical data and saved as a model artifact. The final 8-week forecast is saved to a CSV artifact.
+For every state, the model with the lowest validation RMSE is selected automatically. The best model is retrained on the full historical data and saved under `outputs/models`. The final 8-week forecast is saved to `outputs/forecast_8_weeks.csv`.
 
 ## 6. Backend API
 
@@ -44,7 +44,7 @@ http://localhost:8000/docs
 Call:
 
 ```text
-/forecast/California
+/predict?state=Alabama&weeks=8
 ```
 
 Explain that the response contains 8 weekly predictions, forecast dates, forecast values, and the selected model.
@@ -52,4 +52,3 @@ Explain that the response contains 8 weekly predictions, forecast dates, forecas
 ## 8. Closing
 
 This solution covers data cleaning, feature engineering, multiple forecasting algorithms, automatic model comparison, saved artifacts, and REST API serving, making it an end-to-end forecasting backend system.
-

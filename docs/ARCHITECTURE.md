@@ -15,7 +15,7 @@ flowchart LR
     F3 --> G
     F4 --> G
     G --> H["Best Model Per State"]
-    H --> I["8 Week Forecast Artifacts"]
+    H --> I["8 Week Forecast Outputs"]
     I --> J["FastAPI Prediction Service"]
 ```
 
@@ -27,11 +27,10 @@ Training is an offline batch job:
 python -m app.train
 ```
 
-Serving is a lightweight API that reads saved artifacts:
+Serving is a lightweight API that reads saved outputs:
 
 ```bash
 python run_api.py
 ```
 
 This avoids slow model training during user-facing API requests.
-

@@ -26,7 +26,7 @@ def _summary_path() -> Path:
 def load_forecasts() -> pd.DataFrame:
     path = _forecast_path()
     if not path.exists():
-        raise HTTPException(status_code=503, detail="Forecast artifacts not found. Run `python -m app.train` first.")
+        raise HTTPException(status_code=503, detail="Forecast outputs not found. Run `python -m app.train` first.")
     return pd.read_csv(path)
 
 
@@ -57,10 +57,15 @@ def forecast_state(state: str, horizon_weeks: int = Query(default=FORECAST_HORIZ
 
 
 @app.get("/forecast")
-def forecast_all(horizon_weeks: int = Query(default=FORECAST_HORIZON_WEEKS, ge=1, le=8)):
+def forecast_all(weeks: int = Query(default=FORECAST_HORIZON_WEEKS, ge=1, le=8)):
     forecasts = load_forecasts()
     return {
-        "horizon_weeks": horizon_weeks,
-        "predictions": forecasts.groupby("state", group_keys=False).head(horizon_weeks).to_dict(orient="records"),
+        "horizon_weeks": weeks,
+        "predictions": forecasts.groupby("state", group_keys=False).head(weeks).to_dict(orient="records"),
     }
 
+
+@app.get("/predict", response_model=ForecastResponse)
+def predict(state: str, weeks: int = Query(default=FORECAST_HORIZON_WEEKS, ge=1, le=8)):
+    """Assignment-friendly endpoint: /predict?state=Alabama&weeks=8."""
+    return forecast_state(state=state, horizon_weeks=weeks)

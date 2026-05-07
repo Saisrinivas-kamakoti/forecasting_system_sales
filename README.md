@@ -1,108 +1,225 @@
-# End-to-End Time Series Forecasting System with API
+# Forecasting System Sales
 
-This project forecasts the next 8 weeks of sales for each state from the Excel case-study dataset. It is structured like a backend service: data ingestion, feature engineering, model training, model selection, persisted artifacts, and REST endpoints for predictions.
+End-to-end time series forecasting backend for the assignment: forecast the next 8 weeks of sales for each state from the provided case-study dataset.
+
+## Repository Structure
+
+```text
+forecasting_system_sales/
+├── app/                # Training and API code
+│   ├── train.py        # Model training, validation, selection, and forecast export
+│   ├── api.py          # FastAPI app entrypoint
+│   ├── main.py         # API routes
+│   ├── utils.py        # Shared utility exports
+│   ├── data.py         # Excel loading, cleaning, weekly aggregation
+│   ├── features.py     # Lag, rolling, calendar, and holiday features
+│   └── models/         # SARIMA, Prophet, XGBoost, and LSTM wrappers
+├── data/               # Sample dataset
+├── notebooks/          # Exploratory analysis and feature engineering notes
+├── outputs/            # Prediction CSVs, summaries, and plots
+│   └── plots/          # Forecast vs. actual preview plots
+├── docs/               # Report, architecture, and video script
+├── scripts/            # Helper scripts for preview outputs
+├── requirements.txt    # Dependencies
+├── Dockerfile          # Optional container deployment
+└── README.md           # Documentation
+```
+
+## Objective
+
+Forecast the next 8 weeks of sales for each state using historical sales data. The system handles missing dates and missing values, captures trend and seasonality, compares multiple models, selects the best model automatically, and serves predictions through a REST API.
 
 ## Dataset
 
-Source file: `data/Forecasting Case- Study.xlsx`
+Source file:
+
+```text
+data/Forecasting Case- Study.xlsx
+```
 
 Observed columns:
 
-| Column | Purpose |
+| Column | Description |
 | --- | --- |
-| `State` | Forecast entity |
-| `Date` | Historical sales date |
-| `Total` | Sales value to forecast |
-| `Category` | Product category, currently `Beverages` |
+| `State` | Forecast group |
+| `Date` | Historical date |
+| `Total` | Sales amount |
+| `Category` | Product category |
 
-The pipeline aggregates the data to weekly state-level sales, fills missing weekly dates per state, and interpolates missing values where required.
+The dataset is aggregated to weekly state-level sales. Missing weekly dates are created per state, and missing values are filled with time interpolation plus forward/backward fill.
 
 ## Models Implemented
 
-The training job compares the following models for every state:
+The training pipeline compares these mandatory models for every state:
 
-1. SARIMA using `statsmodels`
-2. Facebook Prophet
-3. XGBoost with lag and rolling-window features
-4. LSTM neural network using TensorFlow/Keras
+- ARIMA/SARIMA using `statsmodels`
+- Facebook Prophet
+- XGBoost with lag features
+- LSTM deep learning model using TensorFlow/Keras
 
-The best model is selected independently for each state using validation RMSE from a time-series split. The final chosen model is retrained on all available history and used to produce the 8-week forecast.
+The best model is selected per state using validation RMSE.
 
 ## Feature Engineering
 
-The XGBoost model uses:
+The machine-learning feature set includes:
 
 - Lag features: `t-1`, `t-7`, `t-30`
-- Rolling mean and standard deviation: 4, 8, and 12 weeks
-- Calendar features: day of week, month, week of year, quarter
-- Holiday flag: built-in US holiday indicator
+- Rolling mean and rolling standard deviation
+- Day of week
+- Month
+- Week of year
+- Quarter
+- Holiday flag
 
-The split is chronological: the last 8 weeks are used for validation, so future data never leaks into training.
+All lag and rolling features are shifted so the model only learns from past values.
 
-## Setup
+## Training Pipeline
+
+The pipeline uses time-series validation:
+
+1. Load Excel data.
+2. Aggregate sales weekly by state.
+3. Fill missing dates and values.
+4. Split chronologically: final 8 weeks as validation.
+5. Train SARIMA, Prophet, XGBoost, and LSTM.
+6. Score models with MAE, RMSE, and MAPE.
+7. Select the lowest-RMSE model per state.
+8. Retrain the selected model on full history.
+9. Export 8-week forecasts to `outputs/`.
+
+## Installation
 
 ```bash
-cd "C:\Users\bhara\Downloads\forecasting_time_series_api"
+python3.11 -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+On Windows, if `python3.11` is unavailable, use:
+
+```bash
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-Copy the Excel file into the project data folder:
+## Run Training
 
 ```bash
-copy "C:\Users\bhara\Downloads\Forecasting Case- Study.xlsx" "data\Forecasting Case- Study.xlsx"
+python -m app.train --data-path ./data/Forecasting Case- Study.xlsx
 ```
 
-## Train Models
+Training writes:
 
-```bash
-python -m app.train
-```
-
-Outputs:
-
-- `artifacts/metrics.csv`: model comparison by state
-- `artifacts/forecast_8_weeks.csv`: final 8-week predictions
-- `artifacts/training_summary.json`: selected model per state
-- `artifacts/models/`: pickled best model per state
+- `outputs/metrics.csv`
+- `outputs/forecast_8_weeks.csv`
+- `outputs/training_summary.json`
+- `outputs/models/`
 
 ## Run API
+
+```bash
+uvicorn app.api:app --reload
+```
+
+Alternative:
 
 ```bash
 python run_api.py
 ```
 
-Open:
+Swagger UI:
 
-- Swagger UI: `http://localhost:8000/docs`
-- Health check: `http://localhost:8000/health`
-- List states: `http://localhost:8000/states`
-- One state forecast: `http://localhost:8000/forecast/California`
-- All forecasts: `http://localhost:8000/forecast`
+```text
+http://localhost:8000/docs
+```
 
-## Example API Response
+## API Usage
+
+Health check:
+
+```text
+GET /health
+```
+
+List available states:
+
+```text
+GET /states
+```
+
+Assignment-style prediction endpoint:
+
+```text
+GET /predict?state=Alabama&weeks=8
+```
+
+Path-style prediction endpoint:
+
+```text
+GET /forecast/California?horizon_weeks=8
+```
+
+All state forecasts:
+
+```text
+GET /forecast?weeks=8
+```
+
+## Example Response
 
 ```json
 {
-  "state": "California",
+  "state": "Alabama",
   "horizon_weeks": 8,
   "predictions": [
     {
-      "state": "California",
+      "state": "Alabama",
       "date": "2023-12-10",
-      "forecast_sales": 123456789.0,
-      "model": "XGBoost"
+      "forecast_sales": 246273728.73,
+      "model": "Sample seasonal-naive preview"
     }
   ]
 }
 ```
 
-## Production Design Notes
+## Outputs Included
 
-- Separate modules for data preparation, features, metrics, model wrappers, training, and API.
-- Model selection is automated by validation RMSE.
-- Each state receives its own best model because state-level sales behavior can differ.
-- REST API serves persisted forecast artifacts instead of retraining during requests.
-- Dockerfile is included for deployment.
+The repository includes preview outputs so reviewers can inspect file formats without running the full training job:
 
+- `outputs/forecast_8_weeks.csv`
+- `outputs/sample_predictions.csv`
+- `outputs/training_summary.json`
+- `outputs/plots/alabama_forecast_preview.png`
+- `outputs/plots/california_forecast_preview.png`
+- `outputs/plots/florida_forecast_preview.png`
+- `outputs/plots/new_york_forecast_preview.png`
+- `outputs/plots/texas_forecast_preview.png`
+
+These preview outputs are clearly marked as sample seasonal-naive previews. Running `python -m app.train` replaces them with outputs from the automatic SARIMA/Prophet/XGBoost/LSTM model-selection pipeline.
+
+## Demo Video
+
+The script for recording the required demo is available at:
+
+```text
+docs/VIDEO_SCRIPT.md
+```
+
+Recommended demo flow:
+
+1. Show the repository structure.
+2. Run `python -m app.train`.
+3. Run `uvicorn app.api:app --reload`.
+4. Open `http://localhost:8000/docs`.
+5. Query `/predict?state=Alabama&weeks=8`.
+
+Add the Google Drive or YouTube demo video link here after recording:
+
+```text
+Demo video: <paste link here>
+```
+
+## Optional Deployment
+
+The included `Dockerfile` can be used to deploy the API to Render, Railway, Azure App Service, or another container-friendly platform.

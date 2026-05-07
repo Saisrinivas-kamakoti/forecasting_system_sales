@@ -1,0 +1,345 @@
+state,date,forecast_sales,model
+Alabama,2023-12-10,372997462.74,Sample seasonal-naive preview
+Alabama,2023-12-17,395409862.63,Sample seasonal-naive preview
+Alabama,2023-12-24,417822262.52,Sample seasonal-naive preview
+Alabama,2023-12-31,440234662.41,Sample seasonal-naive preview
+Alabama,2024-01-07,462647062.3,Sample seasonal-naive preview
+Alabama,2024-01-14,485059462.19,Sample seasonal-naive preview
+Alabama,2024-01-21,507471862.08,Sample seasonal-naive preview
+Alabama,2024-01-28,529884261.97,Sample seasonal-naive preview
+Arizona,2023-12-10,408382638.93,Sample seasonal-naive preview
+Arizona,2023-12-17,431501931.13,Sample seasonal-naive preview
+Arizona,2023-12-24,454621223.34,Sample seasonal-naive preview
+Arizona,2023-12-31,477740515.55,Sample seasonal-naive preview
+Arizona,2024-01-07,500859807.76,Sample seasonal-naive preview
+Arizona,2024-01-14,523979099.96,Sample seasonal-naive preview
+Arizona,2024-01-21,547098392.17,Sample seasonal-naive preview
+Arizona,2024-01-28,570217684.38,Sample seasonal-naive preview
+Arkansas,2023-12-10,200102246.03,Sample seasonal-naive preview
+Arkansas,2023-12-17,211418342.69,Sample seasonal-naive preview
+Arkansas,2023-12-24,222734439.35,Sample seasonal-naive preview
+Arkansas,2023-12-31,234050536.0,Sample seasonal-naive preview
+Arkansas,2024-01-07,245366632.66,Sample seasonal-naive preview
+Arkansas,2024-01-14,256682729.32,Sample seasonal-naive preview
+Arkansas,2024-01-21,267998825.97,Sample seasonal-naive preview
+Arkansas,2024-01-28,279314922.63,Sample seasonal-naive preview
+California,2023-12-10,1609938310.81,Sample seasonal-naive preview
+California,2023-12-17,1708230256.91,Sample seasonal-naive preview
+California,2023-12-24,1806522203.01,Sample seasonal-naive preview
+California,2023-12-31,1904814149.11,Sample seasonal-naive preview
+California,2024-01-07,2003106095.21,Sample seasonal-naive preview
+California,2024-01-14,2101398041.32,Sample seasonal-naive preview
+California,2024-01-21,2199689987.42,Sample seasonal-naive preview
+California,2024-01-28,2297981933.52,Sample seasonal-naive preview
+Colorado,2023-12-10,322772387.76,Sample seasonal-naive preview
+Colorado,2023-12-17,341973168.91,Sample seasonal-naive preview
+Colorado,2023-12-24,361173950.06,Sample seasonal-naive preview
+Colorado,2023-12-31,380374731.22,Sample seasonal-naive preview
+Colorado,2024-01-07,399575512.37,Sample seasonal-naive preview
+Colorado,2024-01-14,418776293.53,Sample seasonal-naive preview
+Colorado,2024-01-21,437977074.68,Sample seasonal-naive preview
+Colorado,2024-01-28,457177855.83,Sample seasonal-naive preview
+Connecticut,2023-12-10,161351408.95,Sample seasonal-naive preview
+Connecticut,2023-12-17,170427093.06,Sample seasonal-naive preview
+Connecticut,2023-12-24,179502777.17,Sample seasonal-naive preview
+Connecticut,2023-12-31,188578461.28,Sample seasonal-naive preview
+Connecticut,2024-01-07,197654145.38,Sample seasonal-naive preview
+Connecticut,2024-01-14,206729829.49,Sample seasonal-naive preview
+Connecticut,2024-01-21,215805513.6,Sample seasonal-naive preview
+Connecticut,2024-01-28,224881197.71,Sample seasonal-naive preview
+Florida,2023-12-10,1395519384.2,Sample seasonal-naive preview
+Florida,2023-12-17,1481472399.69,Sample seasonal-naive preview
+Florida,2023-12-24,1567425415.17,Sample seasonal-naive preview
+Florida,2023-12-31,1653378430.66,Sample seasonal-naive preview
+Florida,2024-01-07,1739331446.14,Sample seasonal-naive preview
+Florida,2024-01-14,1825284461.63,Sample seasonal-naive preview
+Florida,2024-01-21,1911237477.12,Sample seasonal-naive preview
+Florida,2024-01-28,1997190492.6,Sample seasonal-naive preview
+Georgia,2023-12-10,690877521.25,Sample seasonal-naive preview
+Georgia,2023-12-17,733561585.78,Sample seasonal-naive preview
+Georgia,2023-12-24,776245650.31,Sample seasonal-naive preview
+Georgia,2023-12-31,818929714.84,Sample seasonal-naive preview
+Georgia,2024-01-07,861613779.37,Sample seasonal-naive preview
+Georgia,2024-01-14,904297843.9,Sample seasonal-naive preview
+Georgia,2024-01-21,946981908.43,Sample seasonal-naive preview
+Georgia,2024-01-28,989665972.96,Sample seasonal-naive preview
+Illinois,2023-12-10,592688339.19,Sample seasonal-naive preview
+Illinois,2023-12-17,627577942.33,Sample seasonal-naive preview
+Illinois,2023-12-24,662467545.47,Sample seasonal-naive preview
+Illinois,2023-12-31,697357148.61,Sample seasonal-naive preview
+Illinois,2024-01-07,732246751.75,Sample seasonal-naive preview
+Illinois,2024-01-14,767136354.89,Sample seasonal-naive preview
+Illinois,2024-01-21,802025958.03,Sample seasonal-naive preview
+Illinois,2024-01-28,836915561.17,Sample seasonal-naive preview
+Indiana,2023-12-10,404746357.97,Sample seasonal-naive preview
+Indiana,2023-12-17,428397696.15,Sample seasonal-naive preview
+Indiana,2023-12-24,452049034.33,Sample seasonal-naive preview
+Indiana,2023-12-31,475700372.51,Sample seasonal-naive preview
+Indiana,2024-01-07,499351710.68,Sample seasonal-naive preview
+Indiana,2024-01-14,523003048.86,Sample seasonal-naive preview
+Indiana,2024-01-21,546654387.04,Sample seasonal-naive preview
+Indiana,2024-01-28,570305725.22,Sample seasonal-naive preview
+Iowa,2023-12-10,209340671.74,Sample seasonal-naive preview
+Iowa,2023-12-17,221101396.57,Sample seasonal-naive preview
+Iowa,2023-12-24,232862121.4,Sample seasonal-naive preview
+Iowa,2023-12-31,244622846.23,Sample seasonal-naive preview
+Iowa,2024-01-07,256383571.05,Sample seasonal-naive preview
+Iowa,2024-01-14,268144295.88,Sample seasonal-naive preview
+Iowa,2024-01-21,279905020.71,Sample seasonal-naive preview
+Iowa,2024-01-28,291665745.54,Sample seasonal-naive preview
+Kansas,2023-12-10,163603595.18,Sample seasonal-naive preview
+Kansas,2023-12-17,172503694.51,Sample seasonal-naive preview
+Kansas,2023-12-24,181403793.84,Sample seasonal-naive preview
+Kansas,2023-12-31,190303893.17,Sample seasonal-naive preview
+Kansas,2024-01-07,199203992.5,Sample seasonal-naive preview
+Kansas,2024-01-14,208104091.83,Sample seasonal-naive preview
+Kansas,2024-01-21,217004191.16,Sample seasonal-naive preview
+Kansas,2024-01-28,225904290.49,Sample seasonal-naive preview
+Kentucky,2023-12-10,312666729.21,Sample seasonal-naive preview
+Kentucky,2023-12-17,330753345.65,Sample seasonal-naive preview
+Kentucky,2023-12-24,348839962.09,Sample seasonal-naive preview
+Kentucky,2023-12-31,366926578.52,Sample seasonal-naive preview
+Kentucky,2024-01-07,385013194.96,Sample seasonal-naive preview
+Kentucky,2024-01-14,403099811.4,Sample seasonal-naive preview
+Kentucky,2024-01-21,421186427.83,Sample seasonal-naive preview
+Kentucky,2024-01-28,439273044.27,Sample seasonal-naive preview
+Louisiana,2023-12-10,336369191.08,Sample seasonal-naive preview
+Louisiana,2023-12-17,356585915.65,Sample seasonal-naive preview
+Louisiana,2023-12-24,376802640.21,Sample seasonal-naive preview
+Louisiana,2023-12-31,397019364.77,Sample seasonal-naive preview
+Louisiana,2024-01-07,417236089.33,Sample seasonal-naive preview
+Louisiana,2024-01-14,437452813.9,Sample seasonal-naive preview
+Louisiana,2024-01-21,457669538.46,Sample seasonal-naive preview
+Louisiana,2024-01-28,477886263.02,Sample seasonal-naive preview
+Maine,2023-12-10,86216271.08,Sample seasonal-naive preview
+Maine,2023-12-17,91516264.25,Sample seasonal-naive preview
+Maine,2023-12-24,96816257.43,Sample seasonal-naive preview
+Maine,2023-12-31,102116250.6,Sample seasonal-naive preview
+Maine,2024-01-07,107416243.78,Sample seasonal-naive preview
+Maine,2024-01-14,112716236.95,Sample seasonal-naive preview
+Maine,2024-01-21,118016230.13,Sample seasonal-naive preview
+Maine,2024-01-28,123316223.3,Sample seasonal-naive preview
+Maryland,2023-12-10,296762448.97,Sample seasonal-naive preview
+Maryland,2023-12-17,314560594.07,Sample seasonal-naive preview
+Maryland,2023-12-24,332358739.16,Sample seasonal-naive preview
+Maryland,2023-12-31,350156884.26,Sample seasonal-naive preview
+Maryland,2024-01-07,367955029.36,Sample seasonal-naive preview
+Maryland,2024-01-14,385753174.46,Sample seasonal-naive preview
+Maryland,2024-01-21,403551319.55,Sample seasonal-naive preview
+Maryland,2024-01-28,421349464.65,Sample seasonal-naive preview
+Massachusetts,2023-12-10,336585140.58,Sample seasonal-naive preview
+Massachusetts,2023-12-17,356262115.64,Sample seasonal-naive preview
+Massachusetts,2023-12-24,375939090.7,Sample seasonal-naive preview
+Massachusetts,2023-12-31,395616065.76,Sample seasonal-naive preview
+Massachusetts,2024-01-07,415293040.82,Sample seasonal-naive preview
+Massachusetts,2024-01-14,434970015.88,Sample seasonal-naive preview
+Massachusetts,2024-01-21,454646990.94,Sample seasonal-naive preview
+Massachusetts,2024-01-28,474323966.0,Sample seasonal-naive preview
+Michigan,2023-12-10,532270129.96,Sample seasonal-naive preview
+Michigan,2023-12-17,564123937.72,Sample seasonal-naive preview
+Michigan,2023-12-24,595977745.47,Sample seasonal-naive preview
+Michigan,2023-12-31,627831553.23,Sample seasonal-naive preview
+Michigan,2024-01-07,659685360.99,Sample seasonal-naive preview
+Michigan,2024-01-14,691539168.75,Sample seasonal-naive preview
+Michigan,2024-01-21,723392976.5,Sample seasonal-naive preview
+Michigan,2024-01-28,755246784.26,Sample seasonal-naive preview
+Minnesota,2023-12-10,282180396.23,Sample seasonal-naive preview
+Minnesota,2023-12-17,298299157.3,Sample seasonal-naive preview
+Minnesota,2023-12-24,314417918.37,Sample seasonal-naive preview
+Minnesota,2023-12-31,330536679.44,Sample seasonal-naive preview
+Minnesota,2024-01-07,346655440.51,Sample seasonal-naive preview
+Minnesota,2024-01-14,362774201.58,Sample seasonal-naive preview
+Minnesota,2024-01-21,378892962.65,Sample seasonal-naive preview
+Minnesota,2024-01-28,395011723.72,Sample seasonal-naive preview
+Mississippi,2023-12-10,223789816.37,Sample seasonal-naive preview
+Mississippi,2023-12-17,236987600.88,Sample seasonal-naive preview
+Mississippi,2023-12-24,250185385.4,Sample seasonal-naive preview
+Mississippi,2023-12-31,263383169.91,Sample seasonal-naive preview
+Mississippi,2024-01-07,276580954.43,Sample seasonal-naive preview
+Mississippi,2024-01-14,289778738.94,Sample seasonal-naive preview
+Mississippi,2024-01-21,302976523.45,Sample seasonal-naive preview
+Mississippi,2024-01-28,316174307.97,Sample seasonal-naive preview
+Missouri,2023-12-10,351001912.24,Sample seasonal-naive preview
+Missouri,2023-12-17,370415607.28,Sample seasonal-naive preview
+Missouri,2023-12-24,389829302.31,Sample seasonal-naive preview
+Missouri,2023-12-31,409242997.35,Sample seasonal-naive preview
+Missouri,2024-01-07,428656692.38,Sample seasonal-naive preview
+Missouri,2024-01-14,448070387.42,Sample seasonal-naive preview
+Missouri,2024-01-21,467484082.45,Sample seasonal-naive preview
+Missouri,2024-01-28,486897777.49,Sample seasonal-naive preview
+Nebraska,2023-12-10,112182841.03,Sample seasonal-naive preview
+Nebraska,2023-12-17,118202512.97,Sample seasonal-naive preview
+Nebraska,2023-12-24,124222184.9,Sample seasonal-naive preview
+Nebraska,2023-12-31,130241856.84,Sample seasonal-naive preview
+Nebraska,2024-01-07,136261528.77,Sample seasonal-naive preview
+Nebraska,2024-01-14,142281200.71,Sample seasonal-naive preview
+Nebraska,2024-01-21,148300872.64,Sample seasonal-naive preview
+Nebraska,2024-01-28,154320544.57,Sample seasonal-naive preview
+Nevada,2023-12-10,187097578.99,Sample seasonal-naive preview
+Nevada,2023-12-17,198127486.54,Sample seasonal-naive preview
+Nevada,2023-12-24,209157394.09,Sample seasonal-naive preview
+Nevada,2023-12-31,220187301.64,Sample seasonal-naive preview
+Nevada,2024-01-07,231217209.19,Sample seasonal-naive preview
+Nevada,2024-01-14,242247116.74,Sample seasonal-naive preview
+Nevada,2024-01-21,253277024.29,Sample seasonal-naive preview
+Nevada,2024-01-28,264306931.84,Sample seasonal-naive preview
+New Hampshire,2023-12-10,101934475.45,Sample seasonal-naive preview
+New Hampshire,2023-12-17,107905757.4,Sample seasonal-naive preview
+New Hampshire,2023-12-24,113877039.36,Sample seasonal-naive preview
+New Hampshire,2023-12-31,119848321.31,Sample seasonal-naive preview
+New Hampshire,2024-01-07,125819603.26,Sample seasonal-naive preview
+New Hampshire,2024-01-14,131790885.22,Sample seasonal-naive preview
+New Hampshire,2024-01-21,137762167.17,Sample seasonal-naive preview
+New Hampshire,2024-01-28,143733449.12,Sample seasonal-naive preview
+New Mexico,2023-12-10,132928853.37,Sample seasonal-naive preview
+New Mexico,2023-12-17,140633088.68,Sample seasonal-naive preview
+New Mexico,2023-12-24,148337323.99,Sample seasonal-naive preview
+New Mexico,2023-12-31,156041559.3,Sample seasonal-naive preview
+New Mexico,2024-01-07,163745794.61,Sample seasonal-naive preview
+New Mexico,2024-01-14,171450029.92,Sample seasonal-naive preview
+New Mexico,2024-01-21,179154265.23,Sample seasonal-naive preview
+New Mexico,2024-01-28,186858500.53,Sample seasonal-naive preview
+New York,2023-12-10,798475709.4,Sample seasonal-naive preview
+New York,2023-12-17,845707170.23,Sample seasonal-naive preview
+New York,2023-12-24,892938631.06,Sample seasonal-naive preview
+New York,2023-12-31,940170091.89,Sample seasonal-naive preview
+New York,2024-01-07,987401552.71,Sample seasonal-naive preview
+New York,2024-01-14,1034633013.54,Sample seasonal-naive preview
+New York,2024-01-21,1081864474.37,Sample seasonal-naive preview
+New York,2024-01-28,1129095935.2,Sample seasonal-naive preview
+North Carolina,2023-12-10,649574447.02,Sample seasonal-naive preview
+North Carolina,2023-12-17,687323858.35,Sample seasonal-naive preview
+North Carolina,2023-12-24,725073269.67,Sample seasonal-naive preview
+North Carolina,2023-12-31,762822680.99,Sample seasonal-naive preview
+North Carolina,2024-01-07,800572092.32,Sample seasonal-naive preview
+North Carolina,2024-01-14,838321503.64,Sample seasonal-naive preview
+North Carolina,2024-01-21,876070914.97,Sample seasonal-naive preview
+North Carolina,2024-01-28,913820326.29,Sample seasonal-naive preview
+Ohio,2023-12-10,680835854.75,Sample seasonal-naive preview
+Ohio,2023-12-17,720844530.96,Sample seasonal-naive preview
+Ohio,2023-12-24,760853207.18,Sample seasonal-naive preview
+Ohio,2023-12-31,800861883.4,Sample seasonal-naive preview
+Ohio,2024-01-07,840870559.61,Sample seasonal-naive preview
+Ohio,2024-01-14,880879235.83,Sample seasonal-naive preview
+Ohio,2024-01-21,920887912.05,Sample seasonal-naive preview
+Ohio,2024-01-28,960896588.27,Sample seasonal-naive preview
+Oklahoma,2023-12-10,264796834.35,Sample seasonal-naive preview
+Oklahoma,2023-12-17,279573938.16,Sample seasonal-naive preview
+Oklahoma,2023-12-24,294351041.97,Sample seasonal-naive preview
+Oklahoma,2023-12-31,309128145.78,Sample seasonal-naive preview
+Oklahoma,2024-01-07,323905249.59,Sample seasonal-naive preview
+Oklahoma,2024-01-14,338682353.4,Sample seasonal-naive preview
+Oklahoma,2024-01-21,353459457.21,Sample seasonal-naive preview
+Oklahoma,2024-01-28,368236561.02,Sample seasonal-naive preview
+Oregon,2023-12-10,206807477.89,Sample seasonal-naive preview
+Oregon,2023-12-17,218221307.03,Sample seasonal-naive preview
+Oregon,2023-12-24,229635136.16,Sample seasonal-naive preview
+Oregon,2023-12-31,241048965.3,Sample seasonal-naive preview
+Oregon,2024-01-07,252462794.44,Sample seasonal-naive preview
+Oregon,2024-01-14,263876623.57,Sample seasonal-naive preview
+Oregon,2024-01-21,275290452.71,Sample seasonal-naive preview
+Oregon,2024-01-28,286704281.84,Sample seasonal-naive preview
+Pennsylvania,2023-12-10,661825579.32,Sample seasonal-naive preview
+Pennsylvania,2023-12-17,700741464.26,Sample seasonal-naive preview
+Pennsylvania,2023-12-24,739657349.2,Sample seasonal-naive preview
+Pennsylvania,2023-12-31,778573234.14,Sample seasonal-naive preview
+Pennsylvania,2024-01-07,817489119.08,Sample seasonal-naive preview
+Pennsylvania,2024-01-14,856405004.02,Sample seasonal-naive preview
+Pennsylvania,2024-01-21,895320888.97,Sample seasonal-naive preview
+Pennsylvania,2024-01-28,934236773.91,Sample seasonal-naive preview
+Rhode Island,2023-12-10,47074041.21,Sample seasonal-naive preview
+Rhode Island,2023-12-17,49662640.98,Sample seasonal-naive preview
+Rhode Island,2023-12-24,52251240.75,Sample seasonal-naive preview
+Rhode Island,2023-12-31,54839840.52,Sample seasonal-naive preview
+Rhode Island,2024-01-07,57428440.28,Sample seasonal-naive preview
+Rhode Island,2024-01-14,60017040.05,Sample seasonal-naive preview
+Rhode Island,2024-01-21,62605639.82,Sample seasonal-naive preview
+Rhode Island,2024-01-28,65194239.58,Sample seasonal-naive preview
+South Carolina,2023-12-10,353115327.08,Sample seasonal-naive preview
+South Carolina,2023-12-17,373346644.5,Sample seasonal-naive preview
+South Carolina,2023-12-24,393577961.92,Sample seasonal-naive preview
+South Carolina,2023-12-31,413809279.35,Sample seasonal-naive preview
+South Carolina,2024-01-07,434040596.77,Sample seasonal-naive preview
+South Carolina,2024-01-14,454271914.19,Sample seasonal-naive preview
+South Carolina,2024-01-21,474503231.62,Sample seasonal-naive preview
+South Carolina,2024-01-28,494734549.04,Sample seasonal-naive preview
+South Dakota,2023-12-10,51905178.61,Sample seasonal-naive preview
+South Dakota,2023-12-17,54894399.4,Sample seasonal-naive preview
+South Dakota,2023-12-24,57883620.2,Sample seasonal-naive preview
+South Dakota,2023-12-31,60872841.0,Sample seasonal-naive preview
+South Dakota,2024-01-07,63862061.8,Sample seasonal-naive preview
+South Dakota,2024-01-14,66851282.59,Sample seasonal-naive preview
+South Dakota,2024-01-21,69840503.39,Sample seasonal-naive preview
+South Dakota,2024-01-28,72829724.19,Sample seasonal-naive preview
+Tennessee,2023-12-10,470906620.72,Sample seasonal-naive preview
+Tennessee,2023-12-17,497993735.82,Sample seasonal-naive preview
+Tennessee,2023-12-24,525080850.93,Sample seasonal-naive preview
+Tennessee,2023-12-31,552167966.04,Sample seasonal-naive preview
+Tennessee,2024-01-07,579255081.15,Sample seasonal-naive preview
+Tennessee,2024-01-14,606342196.26,Sample seasonal-naive preview
+Tennessee,2024-01-21,633429311.36,Sample seasonal-naive preview
+Tennessee,2024-01-28,660516426.47,Sample seasonal-naive preview
+Texas,2023-12-10,1645521733.35,Sample seasonal-naive preview
+Texas,2023-12-17,1743408337.13,Sample seasonal-naive preview
+Texas,2023-12-24,1841294940.92,Sample seasonal-naive preview
+Texas,2023-12-31,1939181544.7,Sample seasonal-naive preview
+Texas,2024-01-07,2037068148.49,Sample seasonal-naive preview
+Texas,2024-01-14,2134954752.27,Sample seasonal-naive preview
+Texas,2024-01-21,2232841356.06,Sample seasonal-naive preview
+Texas,2024-01-28,2330727959.84,Sample seasonal-naive preview
+Utah,2023-12-10,154059477.89,Sample seasonal-naive preview
+Utah,2023-12-17,163235338.6,Sample seasonal-naive preview
+Utah,2023-12-24,172411199.31,Sample seasonal-naive preview
+Utah,2023-12-31,181587060.01,Sample seasonal-naive preview
+Utah,2024-01-07,190762920.72,Sample seasonal-naive preview
+Utah,2024-01-14,199938781.43,Sample seasonal-naive preview
+Utah,2024-01-21,209114642.14,Sample seasonal-naive preview
+Utah,2024-01-28,218290502.84,Sample seasonal-naive preview
+Vermont,2023-12-10,32801119.25,Sample seasonal-naive preview
+Vermont,2023-12-17,34722076.48,Sample seasonal-naive preview
+Vermont,2023-12-24,36643033.71,Sample seasonal-naive preview
+Vermont,2023-12-31,38563990.94,Sample seasonal-naive preview
+Vermont,2024-01-07,40484948.17,Sample seasonal-naive preview
+Vermont,2024-01-14,42405905.4,Sample seasonal-naive preview
+Vermont,2024-01-21,44326862.63,Sample seasonal-naive preview
+Vermont,2024-01-28,46247819.86,Sample seasonal-naive preview
+Virginia,2023-12-10,526313391.38,Sample seasonal-naive preview
+Virginia,2023-12-17,556558903.51,Sample seasonal-naive preview
+Virginia,2023-12-24,586804415.64,Sample seasonal-naive preview
+Virginia,2023-12-31,617049927.77,Sample seasonal-naive preview
+Virginia,2024-01-07,647295439.9,Sample seasonal-naive preview
+Virginia,2024-01-14,677540952.03,Sample seasonal-naive preview
+Virginia,2024-01-21,707786464.16,Sample seasonal-naive preview
+Virginia,2024-01-28,738031976.28,Sample seasonal-naive preview
+Washington,2023-12-10,337719066.39,Sample seasonal-naive preview
+Washington,2023-12-17,357037496.52,Sample seasonal-naive preview
+Washington,2023-12-24,376355926.64,Sample seasonal-naive preview
+Washington,2023-12-31,395674356.76,Sample seasonal-naive preview
+Washington,2024-01-07,414992786.89,Sample seasonal-naive preview
+Washington,2024-01-14,434311217.01,Sample seasonal-naive preview
+Washington,2024-01-21,453629647.13,Sample seasonal-naive preview
+Washington,2024-01-28,472948077.25,Sample seasonal-naive preview
+West Virginia,2023-12-10,136528241.87,Sample seasonal-naive preview
+West Virginia,2023-12-17,144028377.58,Sample seasonal-naive preview
+West Virginia,2023-12-24,151528513.3,Sample seasonal-naive preview
+West Virginia,2023-12-31,159028649.02,Sample seasonal-naive preview
+West Virginia,2024-01-07,166528784.74,Sample seasonal-naive preview
+West Virginia,2024-01-14,174028920.46,Sample seasonal-naive preview
+West Virginia,2024-01-21,181529056.17,Sample seasonal-naive preview
+West Virginia,2024-01-28,189029191.89,Sample seasonal-naive preview
+Wisconsin,2023-12-10,284216514.84,Sample seasonal-naive preview
+Wisconsin,2023-12-17,300475710.6,Sample seasonal-naive preview
+Wisconsin,2023-12-24,316734906.36,Sample seasonal-naive preview
+Wisconsin,2023-12-31,332994102.11,Sample seasonal-naive preview
+Wisconsin,2024-01-07,349253297.87,Sample seasonal-naive preview
+Wisconsin,2024-01-14,365512493.63,Sample seasonal-naive preview
+Wisconsin,2024-01-21,381771689.39,Sample seasonal-naive preview
+Wisconsin,2024-01-28,398030885.15,Sample seasonal-naive preview
+Wyoming,2023-12-10,38557461.54,Sample seasonal-naive preview
+Wyoming,2023-12-17,40832204.22,Sample seasonal-naive preview
+Wyoming,2023-12-24,43106946.9,Sample seasonal-naive preview
+Wyoming,2023-12-31,45381689.58,Sample seasonal-naive preview
+Wyoming,2024-01-07,47656432.26,Sample seasonal-naive preview
+Wyoming,2024-01-14,49931174.94,Sample seasonal-naive preview
+Wyoming,2024-01-21,52205917.62,Sample seasonal-naive preview
+Wyoming,2024-01-28,54480660.3,Sample seasonal-naive preview
